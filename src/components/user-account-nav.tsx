@@ -32,7 +32,9 @@ export default function UserAccountNav({ user }: UserAccountNavProps) {
           {user.email && <p className="text-sm text-gray-1">{user.email}</p>}
         </div>
         <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={() => signOut({ callbackUrl: "/" })}>
+        <DropdownMenuItem
+        //  onClick={() => signOut({ callbackUrl: "/" })}
+        >
           Log out
         </DropdownMenuItem>
       </DropdownMenuContent>
